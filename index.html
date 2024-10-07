@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Roaster</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 10px;
+        }
+        #response {
+            margin-top: 20px;
+            white-space: pre-wrap; /* Preserve whitespace */
+        }
+    </style>
+</head>
+<body>
+    <h1>Roast Your CV</h1>
+    <form id="cvForm">
+        <label for="cvFile">Upload your CV (PDF):</label>
+        <input type="file" id="cvFile" accept=".pdf" required>
+        <br>
+        <button type="submit">Roast CV</button>
+    </form>
+    <div id="response"></div>
+</body>
+</html>
